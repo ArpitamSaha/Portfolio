@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- box icon link  -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <!-- Navbar Design-->
+
+    <header class="header">
+        <a href="#home" class="logo">Arpitam </a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#" class="active">Home</a>
+            <a href="#about">About</a>
+            <!-- <a href="#portfolio">Portfolio</a> -->
+            <a href="#contact">Contact</a>
+
+            <span class="active-nav"></span>
+        </nav>
+
+    </header>
+
+    <!-- Home Section Design -->
+
+    <section class="home show-animate" id="home">
+        <div class="home-content">
+            <h1>Hi,I'm <br> Arpitam Saha</h1>
+            <div class="animated-text">
+                <span>Frontend Developer</span>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi voluptate impedit inventore harum eos
+                modi beatae minus ut consequatur. Architecto.</p>
+            <div class="btn-box">
+                <a href="#about">About Me</a>
+            </div>
+        </div>
+        <div class="social-media">
+            <a href="https://github.com/ArpitamSaha" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="http://www.linkedin.com/in/arpitamsaha" target="_blank" rel="noopener noreferrer"><i
+                    class='bx bxl-linkedin' id="linkedin"></i></a>
+            <a href="https://www.instagram.com/im.arpitam_saha" target="_blank"><i class='bx bxl-instagram'></i></a>
+        </div>
+    </section>
+
+    <!-- About Section Design  -->
+
+    <section class="about" id="about">
+        <h2 class="heading">About <span>ME</span></h2>
+        <div class="about-img">
+            <img src="./images/transparent-MyPic.png" alt="">
+            <span class="circle-spin"></span>
+        </div>
+        <div class="about-content">
+            <span>Frontend Developer</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quisquam delectus quos explicabo.
+                Et, recusandae expedita. Ut non, fugit magnam necessitatibus praesentium optio animi eos impedit vel
+                nisi amet architecto! Deleniti necessitatibus explicabo repellendus pariatur, reprehenderit sed
+                quibusdam inventore dolorum magni, quisquam culpa qui eligendi facilis! Placeat praesentium ratione
+                voluptatibus!</p>
+
+            <div class="btn-box">
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Design  -->
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>ME</span></h2>
+        <form action="#">
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" placeholder="Full Name" required>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Email Address" required>
+                </div>
+            </div>
+
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="number" placeholder="Mobile Number" required>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Email Subject" required>
+                </div>
+            </div>
+
+            <div class="textarea-field">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            </div>
+            <div class="btn-box">
+                <button class="btn">Submit</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- custom Js  -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
