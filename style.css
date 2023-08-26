@@ -27,7 +27,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 20px 10%;
+  padding: 10px 10%;
   background-color: var(--main-color);
   display: flex;
   justify-content: space-between;
@@ -256,7 +256,40 @@ section {
   font-size: 1.6rem;
   margin: 2rem 0 3rem;
 }
-
+/* Portfolio Section Css  */
+.work-section {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.work {
+  margin: 1rem;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.work h2 {
+  font-size: 1.5rem;
+}
+.work p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.work-img {
+  margin: 1rem 0;
+  height: 15rem;
+  width: 100%;
+}
+.work-img img {
+  width: 100%;
+  transition: 0.5s ease-in-out;
+}
+.work-img img:hover {
+  transform: scale(1.2);
+  border-radius: 12px;
+}
 /* Contact Section CSS  */
 .contact {
   min-height: auto;
@@ -407,11 +440,5 @@ section {
 @keyframes spinner {
   100% {
     transform: translate(-50%, -50%) rotate(360deg);
-  }
-}
-
-@keyframes showRight {
-  100% {
-    width: 0;
   }
 }
