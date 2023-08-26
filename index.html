@@ -11,6 +11,10 @@
 
     <!-- box icon link  -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Scroll Reveal link  -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
 </head>
 
 <body>
@@ -36,6 +40,9 @@
     <!-- Home Section Design -->
 
     <section class="home show-animate" id="home">
+        <video autoplay loop muted class="bg-vdo">
+            <source src="./images/bg-vdo.mp4" type="video/mp4">
+        </video>
         <div class="home-content">
             <h1>Hi,I'm <br> Arpitam Saha</h1>
             <div class="animated-text">
@@ -66,7 +73,8 @@
         </div>
         <div class="about-content">
             <span>Frontend Developer</span>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quisquam delectus quos explicabo.
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quisquam
+                delectus quos explicabo.
                 Et, recusandae expedita. Ut non, fugit magnam necessitatibus praesentium optio animi eos impedit vel
                 nisi amet architecto! Deleniti necessitatibus explicabo repellendus pariatur, reprehenderit sed
                 quibusdam inventore dolorum magni, quisquam culpa qui eligendi facilis! Placeat praesentium ratione
@@ -85,56 +93,56 @@
 
         <div class="work-section">
 
-            <div class="work">
+            <div class="work left">
                 <h2>Hunation</h2>
                 <div class="work-img">
                     <a href=""><img src="./images/Hunation.jpg" alt=""></a>
                 </div>
                 <p>This is a restaurant Website made using React Js | CSS | Java Script</p>
             </div>
-            <div class="work">
+            <div class="work left">
                 <h2>To Do List</h2>
                 <div class="work-img">
                     <a href=""><img src="./images/To-Do-List.jpg" alt=""></a>
                 </div>
                 <p>Daily To Do List made with html | CSS | Java Script</p>
             </div>
-            <div class="work">
+            <div class="work right">
                 <h2>Temperature Convertor</h2>
                 <div class="work-img">
                     <a href=""> <img src="./images/Temp-convertor.jpg" alt=""></a>
                 </div>
                 <p>Celcius to Faranheit to Kelvin Convertor using Java Script</p>
             </div>
-            <div class="work">
+            <div class="work right">
                 <h2>Plantlet</h2>
                 <div class="work-img">
                     <a href=""><img src="./images/Plantlet.jpg" alt=""></a>
                 </div>
                 <p>Hackathon project built using React Js | Firebase</p>
             </div>
-            <div class="work">
+            <div class="work left">
                 <h2>Dice Game</h2>
                 <div class="work-img">
                     <a href=""><img src="./images/DiceGame.jpg" alt=""></a>
                 </div>
                 <p>A simple dice game made with HTML | CSS | Java Script</p>
             </div>
-            <div class="work">
+            <div class="work left">
                 <h2>Get-Set-Fit</h2>
                 <div class="work-img">
                     <a href=""><img src="./images/" alt=""></a>
                 </div>
                 <p>This is a restaurant Website made using React Js | CSS | Java Script</p>
             </div>
-            <div class="work">
+            <div class="work right">
                 <h2>Netflix-Clone</h2>
                 <div class="work-img">
                     <a href=""><img src="./images/Netflix-Clone.jpg" alt=""></a>
                 </div>
                 <p>This is a restaurant Website made using React Js | CSS | Java Script</p>
             </div>
-            <div class="work">
+            <div class="work right">
                 <h2>Amazon-Clone</h2>
                 <div class="work-img">
                     <a href=""><img src="./images/Amazon-Clone.jpg" alt=""></a>
@@ -154,24 +162,24 @@
         <h2 class="heading">Contact <span>ME</span></h2>
         <form action="#">
             <div class="input-box">
-                <div class="input-field">
+                <div class="input-field left">
                     <input type="text" placeholder="Full Name" required>
                 </div>
-                <div class="input-field">
+                <div class="input-field right">
                     <input type="text" placeholder="Email Address" required>
                 </div>
             </div>
 
             <div class="input-box">
-                <div class="input-field">
+                <div class="input-field left">
                     <input type="number" placeholder="Mobile Number" required>
                 </div>
-                <div class="input-field">
+                <div class="input-field right">
                     <input type="text" placeholder="Email Subject" required>
                 </div>
             </div>
 
-            <div class="textarea-field">
+            <div class="textarea-field bottom">
                 <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
             </div>
             <div class="btn-box">

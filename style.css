@@ -80,8 +80,15 @@ section {
   align-items: center;
   padding: 0 10%;
 }
+.bg-vdo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
 .home-content {
   max-width: 50%;
+  z-index: 3;
 }
 .home-content h1 {
   position: relative;
@@ -158,6 +165,7 @@ section {
   display: flex;
   flex-direction: column;
   gap: 6rem;
+  z-index: 3;
 }
 .social-media i {
   font-size: 4rem;
