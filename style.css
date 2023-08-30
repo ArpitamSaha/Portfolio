@@ -3,7 +3,7 @@
   --bg-color: #ededed;
   --second-bg-color: whitesmoke;
   --text-color: #081b29;
-  --main-color: #02668e;
+  --main-color: #9063ca;
 }
 * {
   margin: 0;
@@ -134,6 +134,7 @@ section {
   margin: 20px 0 40px;
 }
 .home-content .btn-box {
+  color: #b318e7;
   width: 30%;
   height: 50px;
 }
@@ -190,18 +191,9 @@ section {
   box-shadow: 0 0 1rem #6e5494;
 }
 .social-media .bxl-instagram:hover {
-  background: linear-gradient(
-    45deg,
-    #405de6,
-    #5851db,
-    #833ab4,
-    #c13584,
-    #e1306c,
-    #fd1d1d
-  );
+  background: var(--insta-color);
   color: var(--bg-color);
-  box-shadow: 0 0 1rem
-    linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+  box-shadow: 0 0 1rem var(--insta-color);
 }
 
 /* About Page CSS  */
