@@ -1,13 +1,154 @@
-body {
+:root {
+  --bg-color: #ededed;
+  --second-bg-color: whitesmoke;
+  --text-color: #081b29;
+  --main-color: #9063ca;
+}
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+html {
+  font-size: 62.5%;
+  overflow: hidden;
+}
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.btn-box a,
+.btn-box button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1rem;
+  width: 150px;
+  height: 100%;
+  background: transparent;
+  border: 2px solid var(--main-color);
+  border-radius: 8px;
+  font-size: 2rem;
+  color: var(--main-color);
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+  transition: 0.5s ease;
+}
+.btn-box a:hover,
+.btn-box button:hover {
+  background: var(--text-color);
+  color: var(--main-color);
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 991px) {
+  .header {
+    padding: 2rem 4%;
+  }
+  section {
+    padding: 10rem 4% 2rem;
+  }
+  .home {
+    padding: 0 4%;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    background: var(--bg-color);
+  }
+  #menu-icon {
+    display: block;
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    width: 100%;
+    z-index: 1;
+    padding: 1rem 4%;
+    background: var(--bg-color);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    transition: 0.25s ease;
+    transition-delay: 0.25s;
+  }
+  .navbar.active {
+    left: 0;
+  }
+  .navbar .active-nav {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    z-index: -1;
+    transition: 0.25 ease;
+  }
+  .navbar.active .active-nav {
+    left: 0;
+    transition-delay: 0.25s;
+  }
+  .navbar a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+    transform: translateX(-20rem);
+    transition: 0.25s ease;
+  }
+  .navbar.active a {
+    transform: translateX(0);
+    transition-delay: 0.25s;
+  }
+}
+
+/* KEYFRAMES  ANIMATION */
+@keyframes homeText {
+  0%,
+  10%,
+  100% {
+    background-position: -33rem 0;
+  }
+  65%,
+  85% {
+    background-position: -0 0;
+  }
+}
+
+@keyframes homeCursor {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+  65%,
+  78%,
+  85% {
+    width: 100%;
+    opacity: 1;
+  }
+  75%,
+  81% {
+    opacity: 0;
+  }
+}
+
+@keyframes spinner {
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
 }
