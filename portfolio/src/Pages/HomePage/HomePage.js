@@ -1,5 +1,5 @@
 import React from 'react';
-import "./HomePage.css";
+import "./HomePage.scss";
 
 import bg_vdo from '../../Images/bg-vdo.mp4';
 
@@ -16,7 +16,7 @@ const HomePage = () => {
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi voluptate impedit inventore harum eos
                     modi beatae minus ut consequatur. Architecto.</p>
                 <div className="btn-box">
-                    <a href="#about">About Me</a>
+                    <a href="/about">About Me</a>
                 </div>
             </div>
             <div className="social-media">

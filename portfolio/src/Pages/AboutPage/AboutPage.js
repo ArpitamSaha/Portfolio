@@ -1,7 +1,7 @@
 import React from 'react';
 import myPic from '../../Images/transparent-MyPic.png';
 
-import "./AboutPage.css";
+import "./AboutPage.scss";
 
 const AboutPage = () => {
     return (
@@ -22,7 +22,7 @@ const AboutPage = () => {
                         voluptatibus!</p>
 
                     <div class="btn-box">
-                        <a href="#portfolio">My Works</a>
+                        <a href="/portfolio">My Works</a>
                     </div>
                 </div>
             </section>

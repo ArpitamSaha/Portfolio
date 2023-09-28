@@ -1,5 +1,5 @@
 import React from 'react';
-import "./ContactPage.css";
+import "./ContactPage.scss";
 const ContactPage = () => {
     return (
         <div><section class="contact" id="contact">
