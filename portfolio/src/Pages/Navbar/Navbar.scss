@@ -9,6 +9,9 @@
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+  .sticky {
+    background: var(--main-color);
+  }
 }
 #menu-icon {
   position: relative;
@@ -16,9 +19,6 @@
   color: var(--text-color);
   cursor: pointer;
   display: none;
-}
-.header.sticky {
-  background: var(--main-color);
 }
 .logo {
   position: relative;
@@ -28,16 +28,18 @@
 }
 .navbar {
   position: relative;
-}
-.navbar a {
-  font-size: 18px;
-  color: var(--text-color);
-  text-decoration: none;
-  font-weight: 500;
-  margin-left: 35px;
-  transition: 0.3s ease-in-out;
-}
-.navbar a:hover,
-.navbar a.active {
-  color: var(--second-bg-color);
+  a {
+    font-size: 18px;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 0.3s ease-in-out;
+    &:hover {
+      color: var(--second-bg-color);
+    }
+    a.active {
+      color: var(--second-bg-color);
+    }
+  }
 }
