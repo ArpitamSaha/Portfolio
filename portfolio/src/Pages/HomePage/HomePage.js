@@ -3,6 +3,10 @@ import "./HomePage.scss";
 
 import bg_vdo from '../../Images/bg-vdo.mp4';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faGithub  } from '@fortawesome/free-solid-svg-icons'
+import { faGithub , faLinkedinIn , faInstagram} from '@fortawesome/free-brands-svg-icons'
+
 const HomePage = () => {
     return (
 
@@ -20,11 +24,9 @@ const HomePage = () => {
                 </div>
             </div>
             <div className="social-media">
-                <a href="https://github.com/ArpitamSaha" target="_blank" rel="noreferrer"><i className='bx bxl-github github'></i></a>
-                <a href="http://www.linkedin.com/in/arpitamsaha" target="_blank" rel="noreferrer" ><i
-                    className='bx bxl-linkedin' id="linkedin"></i></a>
-                <a href="https://www.instagram.com/im.arpitam_saha" target="_blank" rel="noreferrer"><i
-                    className='bx bxl-instagram instagram'></i></a>
+                <a href="https://github.com/ArpitamSaha" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} beatFade size="2xl" style={{color: "#4a0962",}} /></a>
+                <a href="http://www.linkedin.com/in/arpitamsaha" target="_blank" rel="noreferrer" ><FontAwesomeIcon icon={faLinkedinIn} beatFade size="2xl" style={{color: "#4a0962",}} /></a>
+                <a href="https://www.instagram.com/im.arpitam_saha" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faInstagram} beatFade size="2xl" style={{color: "#4a0962",}} /></a>
             </div>
         </section></div>
     );
